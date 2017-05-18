@@ -1,0 +1,426 @@
+html,body{
+	height: 100%;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+	font-family: cursive;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.box{
+	height: 50%;
+	width: 100%;
+}
+
+.box1{
+	background-color: #c9c9c9;
+}
+
+.box2 {
+	background-color: #6baab6; /*#9ad3de;*/
+}
+
+.box3{
+	background-color: #9bbcc5; /*#e3e3e3;*/
+}
+
+.box4{
+	background-color: #89bdd3;
+}
+
+.box5 {
+	background-color: red;
+}
+
+.box6{
+	background-color: blueviolet;
+}
+
+.box7{
+	background-color: #c9c9c9;
+}
+
+.box8 {
+	background-color: #89bdd3;
+}
+
+.box9{
+	background-color: #c9c9c9;
+}
+
+.box10{
+	background-color: #89bdd3;
+}
+
+.box11{
+	background-color: #6baab6;
+}
+
+.box12{
+	background-color: #c9c9c9;
+}
+
+.box6, .box7, .box8, .box9, .box10, .box11, .box12 {
+	display: none;
+}
+
+.about p, .githubProjects p, .journo p{
+	color: white;
+	font-size: 24px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+/*Box 1*/
+
+.box1 {
+	position: relative;
+}
+
+/*.about p:hover{
+	text-decoration: underline;
+}*/
+
+.about{
+	position: absolute;
+	top: 43%;
+	left: 43%;
+}
+
+.about p {
+	margin-left: -45px;
+}
+
+.face{
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+/*Box 2 */
+
+.box2{
+	/*margin:0 auto;
+	line-height: 1.4em;*/
+
+	display: inline-block;
+    position: relative;
+}
+
+.fa{
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.social{
+	padding-top: 36%;
+	padding-left: 29%;
+}
+
+/*Box 3*/
+
+.box3{
+	position: relative;
+}
+
+.fa-github{
+	color: white;
+	font-size: 50px;
+}
+
+.githubProjects {
+	position: absolute;
+	top: 43%;
+	left: 40%;
+}
+
+.githubProjects p{
+	margin-left: -88px;
+}
+
+.gitHeads h3{
+	color: black;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.gitHeads a{
+	text-align: center;
+}
+/*Box 4 */
+
+.box4{
+	position: relative;
+	 
+	background-color: #6baab6;
+	background-image: 
+	linear-gradient(90deg, transparent 79px, #eee 79px, #eee 81px, transparent 81px), 
+	linear-gradient(#abced4 .1em, transparent .1em);
+	background-size: 100% 1.2em;
+}
+
+.fa-pencil-square-o{
+	color: white;
+	font-size: 50px;
+}
+
+.journo{
+	position: absolute;
+	top: 43%;
+	left: 45%;
+}
+
+.modal-body p{
+	text-transform: uppercase;
+}
+
+.modal-body li{
+	text-align: center;
+}
+
+.modal-body{
+	text-align: center;
+}
+
+.modal-header h2{
+	text-align: center;
+}
+
+.journo p{
+	margin-left: -128px;
+	font-size: 22px;
+}
+
+.aLinks a{
+	text-decoration: none;
+	color: white;
+}
+.aLinks p{
+	color: black;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: underline;
+
+}
+
+/*Box 5*/
+.box5, .box6 {
+	background: linear-gradient(135deg, #e3e3e3 22px, #9ad3de 22px, #9ad3de 24px, transparent 24px, transparent 67px, #9ad3de 67px, #9ad3de 69px, transparent 69px),
+    linear-gradient(225deg, #e3e3e3 22px, #9ad3de 22px, #9ad3de 24px, transparent 24px, transparent 67px, #9ad3de 67px, #9ad3de 69px, transparent 69px)0 64px;
+    background-color:#e3e3e3;
+    background-size: 64px 128px
+}
+.box8,.box7 {
+	background: linear-gradient(135deg, #9ad3de 22px, #e3e3e3  22px, #e3e3e3  24px, transparent 24px, transparent 67px, #e3e3e3 67px, #e3e3e3  69px, transparent 69px),
+    linear-gradient(225deg, #9ad3de 22px, #e3e3e3  22px, #e3e3e3  24px, transparent 24px, transparent 67px, #e3e3e3 67px, #e3e3e3  69px, transparent 69px)0 64px;
+    background-color:#9ad3de;
+    background-size: 64px 128px
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+   /* background-color: rgb(0,0,0); /* Fallback color */
+   /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalJourno{
+	padding-top: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #6da8b8; 
+    color:white;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+    overflow-y: auto;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #86a296;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/* Media Queries 768 and 480*/
+
+@media screen and (min-width: 768px), (min-height: 768px) {
+	.box{
+		width: 50%;
+		height: 25%;
+	}
+
+	.modal-body li{
+		list-style-type: none;
+	}
+
+	.modal-body p{
+		font-size: 22px;
+	}
+
+	.modal-body h3{
+		font-size: 28px;
+	}
+
+	.modal-content h2{
+		font-size: 30px;
+	}
+
+	.modal-body a{
+		font-size: 24px;
+	}
+
+	.box3, .box6, .box7, .box8{
+		display: inline;
+	}
+
+	.box9, .box10, .box11, .box12{
+		display: none;
+	}
+	.box1{
+		order:1;
+	}
+
+	.box5{
+		order:2;
+	}
+
+	.box6{
+		order: 6;
+	}
+	.box2{
+		order:4;
+	}
+	.box3{
+		order:5;
+	}
+	.box7{
+		order:7;
+	}
+	.box8{
+		order:3;
+	}
+	.box4{
+		order:8;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.box{
+		width: 25%;
+		height: calc(100%/3);
+	}
+
+	.box9, .box10, .box11, .box12{
+		display: inline;
+	}
+
+	.modal-body p{
+		font-size: 20px;
+	}
+
+	.modal-body li{
+		list-style-type: none;
+		font-size: 20px;
+	}
+
+	.box1{
+		order:1;
+	}
+
+	.box2{
+		order:6;
+	}
+
+	.box3{
+		order:11;
+	}
+	.box4{
+		order:8;
+	}
+	.box5{
+		order:9;
+	}
+	.box6{
+		order:7;
+	}
+	.box7{
+		order:5;
+	}
+	.box8{
+		order:4;
+	}
+	.box9{
+		order:12;
+	}
+	.box10{
+		order:2;
+	}
+	.box11{
+		order:3;
+	}
+	.box12{
+		order:10;
+	}
+}
