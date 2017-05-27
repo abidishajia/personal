@@ -1,10 +1,34 @@
+/* Copyright for code .box5, .box6, .box8, .box7 and .box4 */
+/* 
+Copyright (c) 2011 Lea Verou, http://lea.verou.me/
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
 html,body{
 	height: 100%;
 	box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p, a{
-	font-family: cursive;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .container{
@@ -73,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 .about p, .githubProjects p, .journo p{
-	color: white;
+	color: white; 
 	font-size: 24px;
 	font-weight: bolder;
 	text-transform: uppercase;
@@ -84,10 +108,6 @@ h1, h2, h3, h4, h5, h6, p, a{
 .box1 {
 	position: relative;
 }
-
-/*.about p:hover{
-	text-decoration: underline;
-}*/
 
 .about{
 	position: absolute;
@@ -109,12 +129,16 @@ img{
 	max-width: 100%;
 	max-height: 100%;
 }
+
+.lowerCase{
+	text-transform: lowercase;
+}
+
+
 /*Box 2 */
 
 .box2{
-	/*margin:0 auto;
-	line-height: 1.4em;*/
-
+	
 	display: inline-block;
     position: relative;
 }
@@ -187,7 +211,7 @@ img{
 }
 
 .modal-body p{
-	text-transform: uppercase;
+	color: white;
 }
 
 .modal-body li{
@@ -216,7 +240,6 @@ img{
 	font-weight: bolder;
 	text-align: center;
 	text-decoration: underline;
-
 }
 
 /*Box 5*/
@@ -232,6 +255,7 @@ img{
     background-color:#9ad3de;
     background-size: 64px 128px
 }
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
